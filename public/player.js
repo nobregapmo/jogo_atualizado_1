@@ -126,7 +126,7 @@ function renderPlayerRoom(room) {
   if (room.state === "finished") {
     renderPlayerFinalResult(room);
   } else {
-    playerElements.hero.classList.remove("hidden");
+    playerElements.hero.classList.toggle("hidden", Boolean(room.currentQuestion));
     playerElements.playerPanels.classList.remove("hidden");
     playerElements.finalResult.classList.add("hidden");
   }
