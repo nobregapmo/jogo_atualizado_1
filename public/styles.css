@@ -325,7 +325,6 @@ button.secondary:hover { background: var(--border); box-shadow: none; }
   cursor: pointer;
   text-align: left;
   transition: transform 0.15s, background 0.15s, border-color 0.15s;
-  animation: pop 0.3s ease;
   box-shadow: none;
 }
 .answer-btn:nth-child(1) { border-color: var(--ans-a); }
