@@ -1,92 +1,168 @@
 [
   {
     "id": 1,
-    "text": "Qual dos seguintes não é um objetivo estratégico do SIEM ?",
-    "options": ["Chegada rápida ao local da emergência.", "Estabilização da vítima no local.", "Prescrição imediata de medicamentos a longo prazo.", "Transporte adequado da vítima."],
+    "text": "Qual não é um objetivo do SIEM?",
+    "options": [
+      "Chegada rápida ao local",
+      "Estabilizar vítima no local",
+      "Prescrever medicação",
+      "Transporte adequado da vítima"
+    ],
     "correctIndex": 2
   },
   {
     "id": 2,
-    "text": "Quais são os 4 passos sequenciais corretos a seguir em Primeiros Socorros?",
-    "options": ["Examinar a vítima, Prestar primeiros socorros, Dar o alerta, Garantir segurança.", "Garantir segurança, Examinar a vítima, Dar o alerta, Prestar os primeiros socorros.", "Dar o alerta, Garantir segurança, Prestar primeiros socorros, Transportar a vítima.", "Prestar primeiros socorros, Examinar a vítima, Ligar 112, Abandonar o local."],
+    "text": "Qual a sequência correta dos primeiros socorros?",
+    "options": [
+      "Examinar, socorrer, alertar, segurança",
+      "Segurança, examinar, alertar, socorrer",
+      "Alertar, segurança, socorrer, transportar",
+      "Socorrer, examinar, ligar 112, sair"
+    ],
     "correctIndex": 1
   },
   {
     "id": 3,
-    "text": "No passo \"Garantir Segurança\", qual das seguintes atitudes deve ser estritamente adotada pelo socorrista?",
-    "options": ["Correr riscos para salvar imediatamente a vítima.", "Ignorar os perigos e focar-se apenas nos ferimentos.", "Não correr riscos, identificar perigos e criar condições de segurança.", "Aproximar-se sem avaliar o cenário envolvente."],
+    "text": "O que fazer para garantir segurança?",
+    "options": [
+      "Correr riscos",
+      "Ignorar perigos",
+      "Identificar perigos",
+      "Aproximar sem avaliar"
+    ],
     "correctIndex": 2
   },
   {
     "id": 4,
-    "text": "Segundo os tipos de riscos mencionados na apresentação para garantir a segurança, quais são as três categorias identificadas?",
-    "options": ["Riscos Ambientais, Riscos Pessoais e Riscos Financeiros.", "Riscos Físicos, Riscos Biológicos e Riscos Tecnológicos.", "Riscos Químicos, Riscos Climáticos e Riscos Sociais.", "Riscos Ergonómicos, Riscos Psicológicos e Riscos Laborais."],
+    "text": "Quais os tipos de riscos?",
+    "options": [
+      "Ambientais, pessoais e financeiros",
+      "Físicos, biológicos e tecnológicos",
+      "Químicos, climáticos e sociais",
+      "Ergonómicos, psicológicos e laborais"
+    ],
     "correctIndex": 1
   },
   {
     "id": 5,
-    "text": "Ao ligar para o 112 para \"Dar o Alerta\", qual destas informações NÃO é descrita na apresentação como prioritária?",
-    "options": ["Local da ocorrência e descrição dos perigos.", "Número e estado das vítimas.", "Histórico escolar ou profissional dos presentes.", "Seguir as instruções do operador e não atrasar o alerta."],
+    "text": "Que informação NÃO é prioritária ao ligar 112?",
+    "options": [
+	"Local da ocorrência e descrição dos perigos.", 
+	"Número e estado das vítimas.", 
+	"Histórico escolar ou profissional dos presentes.", 
+	"Seguir as instruções do operador e não atrasar o alerta."
+    ],
     "correctIndex": 2
   },
   {
     "id": 6,
-    "text": "De forma a gerir a ansiedade e incutir confiança na vítima durante uma emergência, qual deve ser a postura do socorrista?",
-    "options": ["Agitação e pressa visíveis para despachar o processo.", "Manter a calma e demonstrar autocontrolo.", "Permanecer em silêncio absoluto sem interagir ou olhar.", "Discutir os medos e a gravidade da situação em voz alta com terceiros."],
+    "text": "Qual deve ser a postura do socorrista?",
+    "options": [
+      "Agitado",
+      "Calmo e com autocontrolo",
+      "Em silêncio",
+      "Discutir medos"
+    ],
     "correctIndex": 1
   },
   {
     "id": 7,
-    "text": "No âmbito do socorro psicológico à vítima, qual é o conjunto de ações fundamentais preconizado na formação?",
-    "options": ["Ignorar as queixas, gritar por ajuda e afastar-se rápido.", "Apresentar-se, oferecer ajuda, escutar e explicar.", "Dar medicamentos calmantes e proibir a vítima de falar.", "Interrogar agressivamente a vítima sobre as culpas do sucedido."],
+    "text": "Qual a atitude correta com a vítima?",
+    "options": [
+	"Ignorar as queixas, gritar por ajuda e afastar-se rápido.", 
+	"Apresentar-se, oferecer ajuda, escutar e explicar.", 
+	"Dar medicamentos calmantes e proibir a vítima de falar.", 
+	"Interrogar agressivamente a vítima sobre as culpas do sucedido."
+    ],
     "correctIndex": 1
   },
   {
     "id": 8,
-    "text": "Para prevenir infeções e garantir a segurança biológica durante a prestação de primeiros socorros, qual é a indicação expressa?",
-    "options": ["Evitar o contacto com sangue/fluidos, lavar as mãos e usar luvas.", "Lavar as mãos apenas no final de todas as ocorrências do dia.", "Soprar para cima das feridas abertas para remover resíduos.", "Reutilizar as mesmas luvas descartáveis em múltiplas vítimas."],
+    "text": "Como prevenir infeções e garantir a segurança biológica?",
+    "options": [
+      "Usar luvas e lavar mãos",
+      "Lavar mãos no fim do dia",
+      "Soprar feridas",
+      "Reutilizar luvas"
+    ],
     "correctIndex": 0
   },
   {
     "id": 9,
-    "text": "Ao iniciar a abordagem física e o exame de uma vítima, como deve o socorrista efetuar a aproximação?",
-    "options": ["Aproximar-se lateralmente, nunca pela cabeça.", "Surgir de rompante por trás da linha de visão da vítima.", "Colocar-se diretamente ajoelhado por cima do rosto da vítima.", "Chamar a atenção à distância dando palmas ruidosas perto dos ouvidos."],
+    "text": "Como abordar a vítima?",
+    "options": [
+	"Aproximar-se lateralmente, nunca pela cabeça.", 
+	"Surgir de rompante por trás da linha de visão da vítima.", 
+	"Ajoelhado por cima do rosto da vítima.", 
+	"Chamar a atenção à distância."
+    ],
     "correctIndex": 0
   },
   {
     "id": 10,
-    "text": "O que deve o socorrista avaliar com máxima prioridade no exame da vítima após apresentar-se e verificar se esta responde?",
-    "options": ["Se a vítima possui algum objeto de valor ou carteira.", "Verificar se ventila (respira).", "A integridade e marca do vestuário da pessoa.", "Pesquisar de imediato pequenos hematomas nos dedos dos pés."],
+    "text": "O que avaliar primeiro na vítima?",
+    "options": [
+      "Objetos pessoais",
+      "Verificar se ventila (respira)",
+      "Integridade da roupa",
+      "Pequenos hematomas nos dedos dos pés"
+    ],
     "correctIndex": 1
   },
   {
     "id": 11,
-    "text": "Qual é o critério principal para avançar com uma manobra de remoção de emergência de uma vítima?",
-    "options": ["Fazer a remoção sempre para desimpedir o trânsito local o quanto antes.", "No caso em que apenas a remoção da vítima sugere a única hipótese de ajuda.", "Sempre que a vítima manifeste leve desconforto com a sua posição atual.", "Para facilitar a observação por parte dos transeuntes e curiosos."],
+    "text": "Quando remover a vítima?",
+    "options": [
+      "Para liberar trânsito",
+      "Se for a única ajuda",
+      "Por desconforto",
+      "Para observação"
+    ],
     "correctIndex": 1
   },
   {
     "id": 12,
-    "text": "Quais são as técnicas manuais de remoção de emergência explicitadas na documentação de suporte?",
-    "options": ["Chave de Rautek, Cadeira a braços, Transporte Bombeiro, Deslocamento por arrasto.", "Elevação por guindaste, Arrastamento lateral por cordas e Rolamento contínuo.", "Transporte ao colo estilo nupcial e Arrastamento pelos cabelos apenas.", "Uso obrigatório de maca rígida flutuante para resgate em terra."],
+    "text": "Quais técnicas de remoção existem?",
+    "options": [
+      "Chave de Rautek, Cadeira a braços, Transporte Bombeiro, Deslocamento por arrasto.", 
+	"Elevação por guindaste, Arrastamento lateral por cordas e Rolamento contínuo.", 
+	"Transporte ao colo estilo nupcial e Arrastamento pelos cabelos apenas.", 
+	"Uso obrigatório de maca rígida flutuante para resgate em terra."
+    ],
     "correctIndex": 0
   },
   {
     "id": 13,
-    "text": "Iniciando os procedimentos pós-exame, em que cenário clínico específico está indicada a colocação da vítima na Posição Lateral de Segurança (PLS)?",
-    "options": ["Vítima consciente, orientada e sem queixas de dores.", "Vítima inconsciente e com dificuldade em respirar por hemorragia, secreções ou vómito.", "Vítima com uma clara fratura visível e exposta na coluna vertebral.", "Vítima em paragem cardiorrespiratória que não ventila."],
+    "text": "Quando colocar da vítima na Posição Lateral de Segurança?",
+    "options": [
+      "Vítima consciente",
+      "Inconsciente com vómito",
+      "Fratura na coluna",
+      "Paragem cardíaca"
+    ],
     "correctIndex": 1
   },
   {
     "id": 14,
-    "text": "Se um socorrista isolado necessitar obrigatoriamente de se afastar da vítima para pedir ajuda, como a deve deixar posicionada caso ela respire?",
-    "options": ["Sentada contra uma parede ou árvore.", "Colocada em Posição Lateral de Segurança (PLS).", "Em decúbito ventral (de barriga para baixo) na totalidade.", "Deitada de costas com os pés elevados a noventa graus."],
+    "text": "Como deixar a vítima ao pedir ajuda?",
+    "options": [
+      "Sentada",
+      "Em Posição Lateral de Segurança",
+      "De barriga para baixo",
+      "Pés elevados"
+    ],
     "correctIndex": 1
   },
   {
     "id": 15,
-    "text": "Em qual das seguintes condições a recomendação expressa é NÃO MOVIMENTAR a vítima?",
-    "options": ["Vítima inconsciente e a respirar normalmente, com suspeita de lesão da coluna cervical.", "Quando a vítima se encontra num local com risco iminente de explosão ou incêndio.", "Sempre que a vítima se queira levantar de forma autónoma e sem dores.", "Se a vítima estiver a sofrer uma obstrução total das vias aéreas por corpo estranho."],
+    "text": "Quando não mover a vítima?",
+    "options": [
+      "Suspeita de lesão cervical",
+      "Risco de explosão",
+      "Quer levantar-se",
+      "Engasgamento"
+    ],
     "correctIndex": 0
   }
 ]
+```
