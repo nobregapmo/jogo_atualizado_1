@@ -61,12 +61,11 @@ function renderPlayerQuestion(room) {
   playerElements.questionTitle.textContent = room.currentQuestion.text;
   playerElements.questionMeta.textContent = `Pergunta ${room.questionIndex + 1} de ${room.totalQuestions}`;
 
-  const answerLetters = ["🅰️", "🅱️", "🇨", "🇩"];
   room.currentQuestion.options.forEach((option, index) => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "answer-btn";
-    button.textContent = `${answerLetters[index] || (index + 1) + "."} ${option}`;
+    button.textContent = option;
     button.disabled = !playerState.playerId || room.state !== "playing";
 
     if (playerState.selectedAnswer === index) {
