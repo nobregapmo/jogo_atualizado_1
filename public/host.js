@@ -108,6 +108,7 @@ async function pollHostUpdates() {
         `/updates?gameCode=${encodeURIComponent(hostState.gameCode)}&since=${hostState.lastEventId}`
       );
       const data = await response.json();
+      quizShared.syncServerTime(data.serverTime);
       (data.events || []).forEach(handleHostEvent);
       quizShared.updateConnectionStatus(hostElements.connectionStatus, "Ligado. A escutar atualizacoes...");
     } catch (error) {

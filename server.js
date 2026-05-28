@@ -105,7 +105,11 @@ const statements = {
 
 function sendJson(res, statusCode, payload) {
   res.writeHead(statusCode, { "Content-Type": "application/json; charset=utf-8" });
-  res.end(JSON.stringify(payload));
+  const body =
+    payload && typeof payload === "object" && !Array.isArray(payload)
+      ? { serverTime: now(), ...payload }
+      : payload;
+  res.end(JSON.stringify(body));
 }
 
 function sendText(res, statusCode, text, contentType = "text/plain; charset=utf-8") {

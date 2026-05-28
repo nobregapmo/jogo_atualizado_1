@@ -115,13 +115,15 @@ function renderPlayerFinalResult(room) {
 }
 
 function renderPlayerRoom(room) {
+  const previousQuestionIndex = playerState.room?.questionIndex;
   playerState.room = room;
   if (!room) {
     return;
   }
 
-  if (room.state !== "playing") {
+  if (room.questionIndex !== previousQuestionIndex || room.state !== "playing") {
     playerState.selectedAnswer = null;
+    clearAnswerFeedback();
   }
 
   if (room.state === "finished") {
@@ -180,6 +182,7 @@ async function pollPlayerUpdates() {
         `/updates?gameCode=${encodeURIComponent(playerState.gameCode)}&since=${playerState.lastEventId}`
       );
       const data = await response.json();
+      quizShared.syncServerTime(data.serverTime);
       (data.events || []).forEach(handlePlayerEvent);
       quizShared.updateConnectionStatus(playerElements.connectionStatus, "Ligado. A escutar atualizacoes...");
     } catch (error) {
@@ -243,7 +246,7 @@ setInterval(() => {
     return;
   }
 
-  const seconds = Math.max(0, Math.ceil((deadlineAt - Date.now()) / 1000));
+  const seconds = quizShared.getRemainingSeconds(deadlineAt);
   const points = seconds > 0 ? 10 + seconds : 0;
   playerElements.pointsValue.textContent = `${points} pts`;
   playerElements.pointsValue.parentElement?.classList.toggle("timer-warning", seconds > 0 && seconds <= 5);
