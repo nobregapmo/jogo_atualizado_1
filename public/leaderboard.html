@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultados | Emergencia em Acao</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell leaderboard-page">
+      <header class="school-strip">
+        <div>
+          <p class="status-label">Projeto de cidadania</p>
+          <strong>Emergencia em Acao</strong>
+        </div>
+        <img src="/public/esffranco-logo.png" alt="Escola Secundaria Francisco Franco" class="school-logo" />
+      </header>
+
+      <section class="hero final-hero">
+        <div>
+          <p class="eyebrow">Resultados finais</p>
+          <h1>Equipas preparadas</h1>
+          <p id="leaderboardSummary" class="hero-copy">A carregar pontuacoes finais...</p>
+        </div>
+        <div class="status-card final-code-card">
+          <p class="status-label">Sala</p>
+          <p id="finalGameCode" class="game-code">----</p>
+          <p class="mini-link"><a href="/">Novo jogo</a></p>
+        </div>
+      </section>
+
+      <section class="panel final-board">
+        <ol id="finalLeaderboard" class="leaderboard leaderboard-large is-final"></ol>
+      </section>
+    </main>
+
+    <script src="/shared.js"></script>
+    <script src="/leaderboard.js"></script>
+  </body>
+</html>

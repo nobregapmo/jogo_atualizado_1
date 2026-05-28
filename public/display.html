@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecrã do anfitrião | Quiz</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="display-page">
+    <main class="display-shell">
+      <section class="display-stage">
+        <img src="/public/esffranco-logo.png" alt="Escola Secundária Francisco Franco" class="display-logo" />
+
+        <div id="displayLobby" class="display-lobby hidden">
+          <div class="display-lobby-info">
+            <p class="display-lobby-label">📱 Aponta a câmara para entrar!</p>
+            <strong class="display-code-big" id="displayGameCode">----</strong>
+          </div>
+          <div class="display-qr-box">
+            <div id="displayQr"></div>
+          </div>
+        </div>
+
+        <div id="displayActive" class="display-active hidden">
+          <p class="display-eyebrow" id="displayQuestionNumber">--</p>
+          <h1 class="display-question" id="displayQuestion">A aguardar jogo…</h1>
+          <div class="display-answered-bar">
+            <span>Responderam</span>
+            <strong id="displayAnswered">--</strong>
+          </div>
+        </div>
+
+        <ol id="displayLeaderboard" class="display-leaderboard hidden"></ol>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="/display.js"></script>
+  </body>
+</html>

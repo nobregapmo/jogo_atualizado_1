@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anfitrião | Quiz</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="school-strip">
+        <div>
+          <p class="status-label">Projeto de cidadania</p>
+          <strong>🚨 Emergência em Ação</strong>
+        </div>
+        <img src="/public/esffranco-logo.png" alt="Escola Secundária Francisco Franco" class="school-logo" />
+      </header>
+
+      <section class="hero">
+        <div>
+          <p class="eyebrow">🎛️ Centro de Comando</p>
+          <h1>Painel do anfitrião</h1>
+          <p class="hero-copy">
+            Cria a sala, deixa as equipas entrar e conduz cada cenário de emergência pergunta a pergunta.
+          </p>
+        </div>
+        <div class="status-card">
+          <p class="status-label">📡 Ligação</p>
+          <p id="connectionStatus">Sem sala ativa.</p>
+          <p class="mini-link"><a href="/">← Voltar ao início</a></p>
+        </div>
+      </section>
+
+      <section class="panels">
+        <article class="panel">
+          <h2>🏠 Nova sala</h2>
+          <form id="createRoomForm" class="stack">
+            <label>
+              Nome do anfitrião
+              <input id="hostName" name="hostName" maxlength="20" placeholder="Ex: Professora Ana" required />
+            </label>
+            <button type="submit">🎮 Criar sala</button>
+          </form>
+
+          <div id="hostControls" class="stack hidden">
+            <p>🔑 <strong>Código da sala:</strong> <span id="hostGameCode" style="font-size:1.4rem;color:#f59e0b;font-weight:900;letter-spacing:0.1em">-</span></p>
+            <p>📊 <strong>Estado:</strong> <span id="roomState">lobby</span></p>
+            <div class="actions">
+              <button id="startGameBtn" type="button">🚀 Iniciar jogo</button>
+              <button id="nextQuestionBtn" type="button" class="secondary hidden">➡️ Pergunta seguinte</button>
+              <a id="displayLink" class="link-button secondary-link hidden" href="#" target="_blank" rel="noopener">
+                🖥️ Abrir ecrã
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="question-header">
+            <div>
+              <p class="status-label">🎯 Pergunta atual</p>
+              <h2 id="questionTitle">A aguardar criação da sala</h2>
+            </div>
+            <div class="round-stats">
+              <div class="timer">
+                <span>⏱ Tempo</span>
+                <strong id="timerValue">--</strong>
+              </div>
+              <div class="timer answered-counter">
+                <span>✅ Respostas</span>
+                <strong id="answeredValue">--</strong>
+              </div>
+            </div>
+          </div>
+          <div id="questionMeta" class="question-meta">Os eventos da sala vão aparecer aqui.</div>
+        </article>
+      </section>
+
+      <section class="game-grid">
+        <article class="panel">
+          <h2>🏆 Leaderboard</h2>
+          <ol id="leaderboard" class="leaderboard"></ol>
+        </article>
+
+        <article class="panel">
+          <h2>📋 Atividade</h2>
+          <ul id="activityLog" class="activity-log"></ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="/shared.js"></script>
+    <script src="/host.js"></script>
+  </body>
+</html>

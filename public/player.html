@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogador | Quiz</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="school-strip">
+        <div>
+          <p class="status-label">Projeto de cidadania</p>
+          <strong>🚨 Emergência em Ação</strong>
+        </div>
+        <img src="/public/esffranco-logo.png" alt="Escola Secundária Francisco Franco" class="school-logo" />
+      </header>
+
+      <section id="playerHero" class="hero">
+        <div>
+          <p class="eyebrow">🎮 Página do jogador</p>
+          <h1>Responde ao alerta!</h1>
+          <p class="hero-copy">
+            Usa o código da sala, entra na equipa e escolhe a melhor ação para cada situação de emergência.
+          </p>
+        </div>
+        <div class="status-card">
+          <p class="status-label">📡 Ligação</p>
+          <p id="connectionStatus">A aguardar entrada na sala.</p>
+          <p class="mini-link"><a href="/">← Voltar ao início</a></p>
+        </div>
+      </section>
+
+      <section id="playerPanels" class="panels">
+        <article id="joinPanel" class="panel">
+          <h2>🚪 Entrar na equipa</h2>
+          <form id="joinForm" class="stack">
+            <label>
+              Código da sala
+              <input id="joinGameCode" name="gameCode" maxlength="4" placeholder="ABCD"
+                     autocomplete="off" autocapitalize="characters" required />
+            </label>
+            <label>
+              O teu nome
+              <input id="playerName" name="name" maxlength="20" placeholder="Ex: Joana" required />
+            </label>
+            <button type="submit">🏃 Entrar!</button>
+          </form>
+
+          <div id="playerSummary" class="stack hidden">
+            <p>✅ <strong>Jogador:</strong> <span id="playerSummaryName">-</span></p>
+            <p>🔑 <strong>Sala:</strong> <span id="playerSummaryCode">-</span></p>
+          </div>
+        </article>
+
+        <article id="questionPanel" class="panel">
+          <div class="question-header">
+            <div>
+              <p class="status-label">🎯 Pergunta atual</p>
+              <h2 id="questionTitle">A aguardar início do jogo…</h2>
+            </div>
+            <div class="round-stats">
+              <div class="timer">
+                <span>⏱ Tempo</span>
+                <strong id="timerValue">--</strong>
+              </div>
+              <div class="timer points-timer">
+                <span>⭐ Pontos</span>
+                <strong id="pointsValue">--</strong>
+              </div>
+            </div>
+          </div>
+          <div id="questionMeta" class="question-meta">Quando o anfitrião iniciar, o cenário aparece aqui.</div>
+          <div id="answerFeedback" class="answer-feedback hidden"></div>
+          <div id="answerOptions" class="answers"></div>
+        </article>
+      </section>
+
+      <section id="playerFinalResult" class="panel player-final hidden">
+        <p class="status-label">🏆 Resultado final</p>
+        <h1>Jogo terminado!</h1>
+        <p id="finalPlayerName" class="player-final-name">-</p>
+        <div class="player-final-grid">
+          <div>
+            <span>Posição</span>
+            <strong id="finalPosition">--</strong>
+          </div>
+          <div>
+            <span>Pontos</span>
+            <strong id="finalScore">--</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/shared.js"></script>
+    <script src="/player.js"></script>
+  </body>
+</html>

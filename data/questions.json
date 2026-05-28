@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "text": "Qual e a capital de Portugal?",
+    "options": ["Porto", "Lisboa", "Coimbra", "Faro"],
+    "correctIndex": 1
+  },
+  {
+    "id": 2,
+    "text": "Quantos dias tem um ano bissexto?",
+    "options": ["365", "364", "366", "360"],
+    "correctIndex": 2
+  },
+  {
+    "id": 3,
+    "text": "Qual destes e um navegador web?",
+    "options": ["Linux", "Firefox", "Node.js", "MySQL"],
+    "correctIndex": 1
+  },
+  {
+    "id": 4,
+    "text": "O que significa votar numa democracia?",
+    "options": ["Escolher representantes", "Pagar impostos", "Fazer compras", "Usar redes sociais"],
+    "correctIndex": 0
+  },
+  {
+    "id": 5,
+    "text": "Qual destes e um direito dos cidadaos?",
+    "options": ["Ignorar as leis", "Participar na vida publica", "Destruir espacos publicos", "Faltar sempre as aulas"],
+    "correctIndex": 1
+  },
+  {
+    "id": 6,
+    "text": "Qual destes e um dever civico?",
+    "options": ["Respeitar os outros", "Espalhar rumores", "Deitar lixo no chao", "Furar filas"],
+    "correctIndex": 0
+  },
+  {
+    "id": 7,
+    "text": "Para que serve a Constituicao?",
+    "options": ["Definir regras fundamentais do pais", "Escolher a meteorologia", "Vender produtos", "Organizar jogos de futebol"],
+    "correctIndex": 0
+  },
+  {
+    "id": 8,
+    "text": "O que e uma assembleia municipal?",
+    "options": ["Um orgao do poder local", "Uma loja", "Um hospital", "Um transporte publico"],
+    "correctIndex": 0
+  },
+  {
+    "id": 9,
+    "text": "Qual e uma forma correta de participar na comunidade?",
+    "options": ["Ajudar numa iniciativa local", "Riscar paredes", "Impedir os outros de falar", "Desperdicar agua"],
+    "correctIndex": 0
+  },
+  {
+    "id": 10,
+    "text": "Porque e importante respeitar opinioes diferentes?",
+    "options": ["Porque ajuda a convivencia democratica", "Porque todos pensam igual", "Porque elimina as regras", "Porque evita estudar"],
+    "correctIndex": 0
+  }
+]
