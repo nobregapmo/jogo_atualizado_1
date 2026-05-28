@@ -1,4 +1,20 @@
 (function () {
+  let serverTimeOffset = 0;
+
+  function syncServerTime(serverTime) {
+    if (Number.isFinite(serverTime)) {
+      serverTimeOffset = serverTime - Date.now();
+    }
+  }
+
+  function getSyncedNow() {
+    return Date.now() + serverTimeOffset;
+  }
+
+  function getRemainingSeconds(deadlineAt) {
+    return Math.max(0, Math.ceil((deadlineAt - getSyncedNow()) / 1000));
+  }
+
   function api(path, payload) {
     return fetch(path, {
       method: "POST",
@@ -9,6 +25,7 @@
       if (!response.ok) {
         throw new Error(data.error || "Pedido falhou.");
       }
+      syncServerTime(data.serverTime);
       return data;
     });
   }
@@ -81,7 +98,7 @@
         return;
       }
 
-      const seconds = Math.max(0, Math.ceil((deadlineAt - Date.now()) / 1000));
+      const seconds = getRemainingSeconds(deadlineAt);
       timerElement.textContent = `${seconds}s`;
       timerElement.parentElement?.classList.toggle("timer-warning", seconds > 0 && seconds <= 5);
     }, 250);
@@ -89,10 +106,12 @@
 
   window.quizShared = {
     api,
+    getRemainingSeconds,
     goToLeaderboard,
     logActivity,
     renderLeaderboard,
     startTimerLoop,
+    syncServerTime,
     updateConnectionStatus,
   };
 })();
